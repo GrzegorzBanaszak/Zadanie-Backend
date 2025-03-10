@@ -1,0 +1,82 @@
+[
+  {
+    "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "title": "Przygotowanie gleby pod uprawę",
+    "description": "Przekopać i wyrównać pole przed sezonem sadzenia.",
+    "createdAt": "2025-03-10T08:00:00Z",
+    "status": "PENDING",
+    "priority": "HIGH"
+  },
+  {
+    "id": "9c858901-8a57-4791-81fe-4c455b099bc9",
+    "title": "Zakup nawozów",
+    "description": "Kup nawozy organiczne i mineralne.",
+    "createdAt": "2025-03-10T08:15:00Z",
+    "status": "IN_PROGRESS",
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174000",
+    "title": "Przycinanie drzew owocowych",
+    "description": "Przyciąć jabłonie i grusze na wiosnę.",
+    "createdAt": "2025-03-10T08:30:00Z",
+    "status": "PENDING",
+    "priority": "LOW"
+  },
+  {
+    "id": "e2c56db5-dffb-48d2-b060-d0f5a71096e0",
+    "title": "Konserwacja maszyn rolniczych",
+    "description": "Olej, filtry i sprawdzenie ciśnienia w oponach.",
+    "createdAt": "2025-03-10T09:00:00Z",
+    "status": "IN_PROGRESS",
+    "priority": "HIGH"
+  },
+  {
+    "id": "8fa14cdd-1945-49a2-9aee-54e2b0c99f13",
+    "title": "Sadzenie ziemniaków",
+    "description": "Przygotowanie sadzonek i wysadzenie ich na polu.",
+    "createdAt": "2025-03-10T09:30:00Z",
+    "status": "PENDING",
+    "priority": "HIGH"
+  },
+  {
+    "id": "9b0fc5a8-cf6c-4d39-a1b0-0c9d1b4f75a3",
+    "title": "Zamówienie części do traktora",
+    "description": "Zamówić nowe świece zapłonowe i filtr paliwa.",
+    "createdAt": "2025-03-10T10:00:00Z",
+    "status": "COMPLETED",
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "5f4dcc3b-5aa0-4cd3-9c0a-9b0d36b4c6d1",
+    "title": "Sianie marchwi",
+    "description": "Przygotowanie grządek i wysianie nasion marchwi.",
+    "createdAt": "2025-03-10T10:30:00Z",
+    "status": "PENDING",
+    "priority": "LOW"
+  },
+  {
+    "id": "0f4e6c9a-50b0-4f89-9933-77fcd8d4e1a5",
+    "title": "Naprawa ogrodzenia",
+    "description": "Sprawdzenie i naprawa dziur w płocie.",
+    "createdAt": "2025-03-10T11:00:00Z",
+    "status": "IN_PROGRESS",
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "3f2504e0-4f89-11d3-9a0c-0305e82c3301",
+    "title": "Kontrola stanu bydła",
+    "description": "Sprawdzenie zdrowia i kondycji zwierząt.",
+    "createdAt": "2025-03-10T11:30:00Z",
+    "status": "COMPLETED",
+    "priority": "HIGH"
+  },
+  {
+    "id": "c56a4180-65aa-42ec-a945-5fd21dec0538",
+    "title": "Czyszczenie magazynu",
+    "description": "Uporządkowanie narzędzi i sprzętu w magazynie.",
+    "createdAt": "2025-03-10T12:00:00Z",
+    "status": "CANCELED",
+    "priority": "LOW"
+  }
+]
