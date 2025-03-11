@@ -60,9 +60,9 @@ Stwórz API do skracania linków, podobne do bit.ly. Każdy link powinien mieć 
 
 **Wymagania:**
 
-- [ ] Przechowywanie oryginalnych i skróconych URL-i.
-- [ ] Endpoint do generowania skróconego linku.
-- [ ] Endpoint do przekierowywania użytkownika na oryginalny adres.
+- [x] Przechowywanie oryginalnych i skróconych URL-i.
+- [x] Endpoint do generowania skróconego linku.
+- [x] Endpoint do przekierowywania użytkownika na oryginalny adres.
 
 ---
 
