@@ -7,15 +7,14 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   const config = new DocumentBuilder()
-    .setTitle('API do zarządzania książkami w bibliotece')
+    .setTitle('System ankietowy')
     .setDescription(
-      'Stwórz API do zarządzania książkami w bibliotece. Użytkownicy powinni mieć możliwość dodawania książek, wyszukiwania ich według autora lub tytułu oraz sprawdzania dostępności.',
+      'Stwórz API umożliwiające tworzenie i wypełnianie ankiet. Każda ankieta powinna zawierać pytania i możliwe odpowiedzi.',
     )
     .setVersion('1.0')
-    .addTag('Księgarnia')
+    .addTag('Ankiety')
     .build();
   const document = SwaggerModule.createDocument(app, config);
-
   SwaggerModule.setup('api', app, document);
   app.useGlobalPipes(new ValidationPipe());
   await app.listen(process.env.PORT ?? 3000);

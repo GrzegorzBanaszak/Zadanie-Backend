@@ -47,9 +47,9 @@ Stwórz API umożliwiające tworzenie i wypełnianie ankiet. Każda ankieta powi
 
 **Wymagania:**
 
-- [ ] Tworzenie ankiety z wieloma pytaniami.
-- [ ] Możliwość udzielania odpowiedzi na ankiety.
-- [ ] Endpoint zwracający wyniki ankiety w postaci JSON.
+- [x] Tworzenie ankiety z wieloma pytaniami.
+- [x] Możliwość udzielania odpowiedzi na ankiety.
+- [x] Endpoint zwracający wyniki ankiety w postaci JSON.
 
 ---
 

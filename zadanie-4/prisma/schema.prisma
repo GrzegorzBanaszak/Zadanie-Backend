@@ -1,0 +1,57 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Survey {
+  id          Int        @id @default(autoincrement())
+  title       String
+  description String?
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  questions   Question[]
+  responses   Response[]
+}
+
+model Question {
+  id       Int      @id @default(autoincrement())
+  surveyId Int
+  content  String
+  type     String // "SINGLE_CHOICE", "MULTIPLE_CHOICE", "TEXT"
+  order    Int
+  survey   Survey   @relation(fields: [surveyId], references: [id], onDelete: Cascade)
+  options  Option[]
+  answers  Answer[]
+}
+
+model Option {
+  id         Int      @id @default(autoincrement())
+  questionId Int
+  content    String
+  order      Int
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  answers    Answer[]
+}
+
+model Response {
+  id        Int      @id @default(autoincrement())
+  surveyId  Int
+  createdAt DateTime @default(now())
+  survey    Survey   @relation(fields: [surveyId], references: [id], onDelete: Cascade)
+  answers   Answer[]
+}
+
+model Answer {
+  id         Int      @id @default(autoincrement())
+  responseId Int
+  questionId Int
+  optionId   Int?
+  textValue  String?
+  response   Response @relation(fields: [responseId], references: [id], onDelete: Cascade)
+  question   Question @relation(fields: [questionId], references: [id])
+  option     Option?  @relation(fields: [optionId], references: [id])
+}
