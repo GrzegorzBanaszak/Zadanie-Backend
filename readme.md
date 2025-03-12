@@ -86,9 +86,9 @@ Stwórz API umożliwiające rezerwację terminów spotkań. Powinna istnieć mo�
 
 **Wymagania:**
 
-- [ ] CRUD dla spotkań.
-- [ ] Możliwość rezerwacji terminu przez użytkownika.
-- [ ] Endpoint do sprawdzania dostępnych slotów czasowych.
+- [x] CRUD dla spotkań.
+- [x] Możliwość rezerwacji terminu przez użytkownika.
+- [x] Endpoint do sprawdzania dostępnych slotów czasowych.
 
 ---
 

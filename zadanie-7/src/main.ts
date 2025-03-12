@@ -12,17 +12,18 @@ async function bootstrap() {
       transform: true,
     }),
   );
+  // Konfiguracja Swagger
   const config = new DocumentBuilder()
-    .setTitle('System ankietowy')
-    .setDescription(
-      'Stwórz API umożliwiające tworzenie i wypełnianie ankiet. Każda ankieta powinna zawierać pytania i możliwe odpowiedzi.',
-    )
+    .setTitle('System rezerwacji spotkań')
+    .setDescription('API umożliwiające rezerwację terminów spotkań')
     .setVersion('1.0')
-    .addTag('Ankiety')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
 
   await app.listen(process.env.PORT ?? 3000);
+
+  console.log(`Application is running on: http://localhost:3000`);
+  console.log(`Swagger documentation available at: http://localhost:3000/api`);
 }
 bootstrap();
